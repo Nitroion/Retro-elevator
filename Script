@@ -1,0 +1,12 @@
+local args = {
+    [1] = {
+        ["Mods"] = {
+            [1] = "RetroMode"
+        },
+        ["Destination"] = "Hotel",
+        ["FriendsOnly"] = false,
+        ["MaxPlayers"] = "1"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemotesFolder.CreateElevator:FireServer(unpack(args))
